@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RuhaniTrips 🕊</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="event.css">
+    
+    <!-- <link rel="stylesheet" href="responsive.css"> -->
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top dark-theme">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#home">
+                <img src="assets/img/logo2.png" alt="Mountain Logo" width="40" class="me-2 light-logo">
+                <img src="assets/img/logo3.png" alt="Mountain Logo" width="40" class="me-2 dark-logo">
+                <span class="logo">Ruhani<span class="text-warning">Trips</span></span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home" data-section="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#events" data-section="events">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about" data-section="about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery" data-section="about">Gallery</a>
+                    </li>
+
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#feedback" data-section="review">Reviews</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a href="https://wa.me/919996650521" target="_blank" rel="noopener" class="btn btn-contact" >Contact Us</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <div class="theme-switch">
+                            <input type="checkbox" class="checkbox" id="checkbox">
+                            <label for="checkbox" class="label">
+                                <i class="fa fa-moon-o"></i>
+                                <i class="fa fa-sun-o"></i>
+                                <div class="ball"></div>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <section class="hero-section" id="home">
+        <div class="overlay"></div>
+          
+        <div class="video-slides">
+            <div class="video-slide active">
+                <video autoplay muted loop playsinline>
+                    <source src="v2.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="video-slide">
+                <video autoplay muted loop playsinline>
+                    <source src="V3.mp4" type="video/mp4">
+                </video>
+            </div>
+            
+            <div class="video-slide">
+                <video autoplay muted loop playsinline>
+                    <source src="v4.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <div class="container">
+                <h1 class="title">Apka Safar, Humari Zimmedari</h1>
+                <p class="subtitle">Discover amazing experiences with us</p>
+               
+                <!-- <div class="event-footer">
+                    <a href="#contact" class="book-btn" target="_blank" rel="noopener">Contact Us</a>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="slider-controls"></div>
+    </section>
+
+    <!-- events -->
+    <!-- Events Section -->
+<section id="events" class="events-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4"> Events</h2>
+        <p class="section-description text-center mb-5">Discover our amazing adventures and special events</p>
+        
+        
+        
+        <!-- Filter Buttons -->
+        <div class="filter-container text-center mt-4 mb-5">
+            <button class="filter-btn active" data-filter="all">All Events</button>
+            <button class="filter-btn" data-filter="special">Special Events</button>
+        </div>
+        
+        <div class="info-item text-center mb-4">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Pickup: Delhi, Haryana, Chandigarh</span>
+        </div>
+        
+        <!-- Events Grid -->
+        <div class="events-grid">
+            <!-- Event Card 1 -->
+            <div class="event-card" data-category="special">
+                <div class="event-image">
+                    <img src="assets/img/Char Dham Yatra.jpg" alt="CharDhamYatra">
+                    <span class="event-badge">Special</span>
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title">UK Char Dham Yatra</h3>
+                    <div class="event-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>12 Days, 11 Nights</span>
+                        </div>
+                        <div class="info-item " >
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Destination: Yamunotri, Gangotri, Kedarnath, Badrinath </span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-tags"></i>
+                            <span>Starting from ₹25,500</span>
+                        </div>
+                    </div>
+                    <div class="event-footer">
+                        <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Event Card 2 -->
+            <div class="event-card" data-category="regular">
+                <div class="event-image">
+                    <img src="assets/img/kasol.jpg" alt="Desert Safari">
+                </div>
+                <div class="event-details">
+                    <h3 class="event-title">Every Friday</h3>
+                    <div class="event-info">
+                        <div class="info-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>4 Days, 3 Nights</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Destinations: Manali, Kasol,Solang, Khirganga</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-tags"></i>
+                            <span>₹6,999</span>
+                        </div>
+                    </div>
+                    <div class="event-footer">
+                        <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+
+        
+<!-- Event Card 3 -->
+<div class="event-card" data-category="special">
+    <div class="event-image">
+        <img src="assets/img/Manali.jpg" alt="Manali Trek">
+        <span class="event-badge"> Holi Special</span>
+    </div>
+    <div class="event-details">
+        <h3 class="event-title">Manali Kasol Tosh Trek</h3>
+        <div class="event-info">
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>4 Days, 3 Nights</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Destinations: Manali, Kasol, Tosh</span>
+            </div>
+            <div class="info-item highlight-text">
+                <i class="fas fa-motorcycle"></i>
+                <span>Bike Ride Salong Valley</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-tags"></i>
+                <span>₹7,999</span>
+            </div>
+        </div>
+        <div class="event-footer">
+            <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<!-- event 4 card -->
+<div class="event-card" data-category="regular">
+    <div class="event-image">
+        <img src="assets/img/Manali-Shimla.jpg" alt="Desert Safari">
+    </div>
+    <div class="event-details">
+        <h3 class="event-title">Shimla Manali</h3>
+        <div class="event-info">
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>6 Days, 5 Nights</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Destinations: Manali , Shimla-Jakhu-Kufri-Mall Road</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-tags"></i>
+                <span>₹9,599</span>
+            </div>
+        </div>
+        <div class="event-footer">
+            <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+        </div>
+    </div>
+</div>
+ <!-- event card 5 -->
+<div class="event-card" data-category="regular">
+    <div class="event-image">
+        <img src="assets/img/Srinagar.jpg" alt="Desert Safari">
+    </div>
+    <div class="event-details">
+        <h3 class="event-title">Srinagar Jammu Safari</h3>
+        <div class="event-info">
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>7 Days, 6 Nights</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-tags"></i>
+                <span>Destinations: Srinagar, Gulmarg, Sonmarg, Pahalgaon</span>
+            </div>
+        </div>
+        <div class="event-footer">
+            <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Honeymoon Special Card -->
+<div class="event-card" data-category="special">
+    <div class="event-image">
+        <img src="assets/img/couple.jpg" alt="Honeymoon Special">
+        <span class="event-badge">Honeymoon Special</span>
+    </div>
+    <div class="event-details">
+        <h3 class="event-title">Shimla Manali Honeymoon Package</h3>
+        <div class="event-info">
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>5 Nights, 6 Days</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Destinations: Shimla, Kufri, Manali,</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-heart"></i>
+                <span>Special Romantic Arrangements</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-tags"></i>
+                <span>₹32,000 per couple</span>
+            </div>
+        </div>
+        <div class="event-footer">
+            <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+
+        </div>
+    </div>
+    
+</section>
+
+
+    <!-- About Section -->
+<section id="about" class="about-section">
+    <div class="container">
+        <!-- Section Header -->
+        <div class="section-header">
+            <h2 class="section-title">About RuhaniTrips</h2>
+            <div class="divider"></div>
+            <p class="section-subtitle">Discover the world's most amazing places with us. We create unforgettable adventures that combine luxury, culture, and sustainability.</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="about-content">
+            <!-- Founder Image Column -->
+            <div class="founder-image-container">
+                <div class="image-wrapper">
+                    <img src="assets/img/owner.jpg" alt="Our Founder" class="founder-image">
+                    <div class="image-overlay"></div>
+                </div>
+                <div class="blur-circle circle-1"></div>
+                <div class="blur-circle circle-2"></div>
+            </div>
+
+            <!-- Info Column -->
+            <div class="about-info">
+                <!-- Our Story Card -->
+                <div class="info-card">
+                    <h3 class="card-title">Our Story</h3>
+                    <p class="card-text">Established in 2007, Ruhani Trip began its journey with a passion for creating unforgettable travel experiences. Over the years, our dedication to delivering personalized and enriching trips has helped us grow into a trusted name in the travel industry. Today, we are proud to have successfully set up our company, offering a wide range of travel services.</p>
+                </div>
+
+                <!-- Our Mission Card -->
+                <div class="info-card">
+                    <h3 class="card-title">Our Mission</h3>
+                    <p class="card-text">We believe in responsible tourism that benefits local communities while providing our travelers with authentic, immersive experiences. Our commitment to sustainability shapes every adventure we create.</p>
+                </div>
+
+                <!-- Stats Grid -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h4 class="stat-number">1000+</h4>
+                        <p class="stat-label">Happy Travelers</p>
+                    </div>
+                    <div class="stat-card">
+                        <h4 class="stat-number">50+</h4>
+                        <p class="stat-label">Destinations</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- gallery -->
+<!-- Gallery Section -->
+<section id="gallery" class="gallery-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Our Gallery</h2>
+        <p class="section-subtitle text-center mb-5">Explore our most captivating moments and destinations</p>
+
+        <div class="gallery-carousel">
+            <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2"></button>
+                </div>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="assets/gallery/Im1.jpg" alt="Gallery Image 1">
+                                <!-- <div class="gallery-overlay">
+                                    <h3>Char Dham Yatra</h3>
+                                    <p>Explore the heights</p>
+                                </div> -->
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/gallery/Im2.jpg" alt="Gallery Image 2">
+                                <!-- <div class="gallery-overlay">
+                                    <h3>Valley Views</h3>
+                                    <p>Nature's beauty</p>
+                                </div> -->
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/gallery/Im3.jpg" alt="Gallery Image 3">
+                                <!-- <div class="gallery-overlay">
+                                    <h3>Scenic Routes</h3>
+                                    <p>Journey through beauty</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <div class="gallery-grid">
+                            <div class="gallery-item">
+                                <img src="assets/gallery/Im4.jpg" alt="Gallery Image 4">
+                                <!-- <div class="gallery-overlay">
+                                    <h3>Cultural Heritage</h3>
+                                    <p>Traditional experiences</p>
+                                </div> -->
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/gallery/Im5.jpg" alt="Gallery Image 5">
+                                <!-- <div class="gallery-overlay">
+                                    <h3>Adventure Trails</h3>
+                                    <p>Exciting journeys</p>
+                                </div> -->
+                            </div>
+                            <div class="gallery-item">
+                                <img src="assets/gallery/Im6.jpg" alt="Gallery Image 6">
+                                <!-- <div class="gallery-overlay">
+                                    <h3>Local Life</h3>
+                                    <p>Authentic experiences</p>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+ <!-- Contact Section  -->
+<!-- Contact Section -->
+<section id="contact" class="contact-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="section-title">Contact Us</h2>
+            <div class="divider mx-auto"></div>
+            <p class="section-subtitle">Have questions about our tours or special requirements? Fill out the form below.</p>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="contact-card">
+                   <!-- Replace the existing contact form with this -->
+<form id="contactForm" class="contact-form">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fa fa-phone"></i>
+                    </span>
+                    <input type="tel" class="form-control" id="phone" name="phone" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fa fa-envelope"></i>
+                    </span>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fa fa-tag"></i>
+                    </span>
+                    <select class="form-select" id="subject" name="subject" required>
+                        <option value="">Select a subject</option>
+                        <option value="Tour Inquiry">Tour Inquiry</option>
+                        <option value="Booking Question">Booking Question</option>
+                        <option value="Package Details">Package Details</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="form-group">
+                <label for="message" class="form-label">Your Message</label>
+                <div class="input-group">
+                    <span class="input-group-text">
+                        <i class="fa fa-comment"></i>
+                    </span>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 text-center">
+            <button type="submit" class="btn btn-submit">
+                <i class="fa fa-paper-plane me-2"></i>Send Message
+            </button>
+        </div>
+    </div>
+</form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Social Media Section -->
+<section id="social" class="social-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center">Connect With Us</h2>
+        <div class="divider mx-auto mb-4"></div>
+        <p class="section-subtitle text-center mb-5">Follow us on social media for latest updates and travel inspiration</p>
+        
+        <div class="social-grid">
+            <a href="https://www.facebook.com/share/1EakSHsRZD/" class="social-card facebook">
+                <i class="fab fa-facebook-f"></i>
+                <!-- <span class="follower-count">50K+</span>
+                <span class="social-label">Followers</span> -->
+            </a>
+            <a href="https://www.instagram.com/ruhanitrips?igsh=MWZ3bWEzOTlmb3RsOA==" class="social-card instagram">
+                <i class="fab fa-instagram"></i>
+                <!-- <span class="follower-count">75K+</span>
+                <span class="social-label">Followers</span> -->
+            </a>
+            <!-- <a href="#" class="social-card twitter">
+                <i class="fab fa-twitter"></i>
+                <span class="follower-count">25K+</span>
+                <span class="social-label">Followers</span>
+            </a> -->
+            <a href="https://www.youtube.com/channel/UCz9C8lUMAwqT2m45MzDQp9Q" class="social-card youtube">
+                <i class="fab fa-youtube"></i>
+                <!-- <span class="follower-count">100K+</span>
+                <span class="social-label">Subscribers</span> -->
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Add this section before the contact section -->
+<section id="feedback" class="feedback-section py-5">
+    <div class="container">
+        <h2 class="section-title text-center mb-4">Customer Reviews</h2>
+        <p class="section-subtitle text-center mb-5">Share your experience with us</p>
+
+        <!-- Feedback Form -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-md-8">
+                <div class="card shadow feedback-card">
+                    <div class="card-body">
+                        <h5 class="card-title mb-4">Write a Review</h5>
+                        <form id="feedbackForm">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" id="reviewerName" placeholder="Your Name" required>
+                            </div>
+                            <div class="mb-3">
+                                <div class="rating">
+                                    <input type="radio" name="rating" value="5" id="star5" required>
+                                    <label for="star5">★</label>
+                                    <input type="radio" name="rating" value="4" id="star4">
+                                    <label for="star4">★</label>
+                                    <input type="radio" name="rating" value="3" id="star3">
+                                    <label for="star3">★</label>
+                                    <input type="radio" name="rating" value="2" id="star2">
+                                    <label for="star2">★</label>
+                                    <input type="radio" name="rating" value="1" id="star1">
+                                    <label for="star1">★</label>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control" id="reviewText" rows="4" placeholder="Share your experience..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit Review</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Reviews Display -->
+        <div class="row" id="reviewsContainer">
+            <!-- Reviews will be dynamically inserted here -->
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+<footer class="footer-section">
+    <div class="container">
+        <div class="row">
+            <!-- About Column -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <div class="footer-about">
+                    <a class="footer-logo d-flex align-items-center mb-3" href="#home">
+                        <img src="assets/img/logo.png" alt="Mountain Logo" width="40" class="me-2">
+                        <span class="logo">Ruhani<span class="text-warning">Trips</span></span>
+                    </a>
+                    <p class="footer-text">Discover the world's most amazing places with us. We create unforgettable adventures that combine luxury, culture, and sustainability.</p>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h4 class="footer-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#about">About US</a></li>
+                    <li><a href="#Gallery">Gallery</a></li>
+                    <li><a href="#about">Reveiws</a></li>
+                   
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+                <h4 class="footer-title">Contact Info</h4>
+                <ul class="footer-contact">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Shop No.20 Rajguru Market GT Road Panipat</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span>Monty: +9189290905 +919306696415
+                            <br> Raghav: +919992228 +919017022289</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>ruhanitrips@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            </div>
+        </div>
+
+        <!-- Copyright -->
+              <div class="footer-bottom">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="copyright text-center">
+                            <p>© 2025 RuhaniTrips. All rights reserved.</p>
+                            <div class="developer-info mt-2">
+                                <p>Developed by: <span class="dev-name">Samarth Nagpal</span></p>
+                                <div class="dev-contact">
+                                    <a href="https://wa.me/918168191505" target="_blank" rel="noopener" class="dev-link">
+                                        <i class="fab fa-whatsapp"></i> +91 8168191505
+                                    </a>
+                                    <span class="mx-2">|</span>
+                                    <a href="tel:+918168126969" class="dev-link">
+                                        <i class="fas fa-phone"></i> +91 8168191505
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</footer>
+    
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+    <script src="feedback.js"></script>
+    <script src="contact.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,44 @@
+.filter-container {
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+@media (max-width: 576px) {
+    .filter-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filter-btn {
+        width: 200px;
+    }
+}
+/* Add this to your existing CSS */
+.info-item.text-center {
+    padding: 10px 20px;
+    background: #fc036b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    color: #ecf0f4;
+    font-weight: 500;
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.info-item.text-center i {
+    color: #f8fbff;
+    margin-right: 8px;
+}
+
+.highlight-text {
+    color: #fc036b;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background-color: rgba(252, 3, 107, 0.1);
+}

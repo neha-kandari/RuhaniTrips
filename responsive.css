@@ -1,0 +1,277 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Remove the dark edges by modifying container styles */
+.dark-bg {
+    background-color: #121212;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Base container styles */
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/* Hero Section Styles */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.video-slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.video-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.video-slide video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+    padding: 0 20px;
+}
+
+/* Navigation Styles */
+.navbar {
+    width: 100%;
+    padding: 1rem;
+}
+
+.navbar-brand {
+    margin-left: 15px;
+}
+
+/* Mobile Navigation */
+@media (max-width: 991px) {
+    .navbar-collapse {
+        width: 100%;
+        background: rgba(0, 0, 0, 0.95);
+        position: fixed;
+        top: 70px;
+        left: 0;
+        padding: 1rem;
+    }
+}
+
+/* Sections General Styles */
+section {
+    width: 100vw;
+    margin: 0;
+    padding: 40px 0;
+    overflow: hidden;
+}
+
+/* Events Section */
+.events-container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Gallery Section */
+.gallery-section {
+    width: 100%;
+    padding: 0;
+}
+
+.carousel {
+    width: 100%;
+}
+
+/* Contact Section */
+.contact-section {
+    width: 100vw;
+    padding: 40px 0;
+    margin: 0;
+}
+
+.contact-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    /* Container adjustments */
+    .container {
+        width: 100%;
+        padding: 0;
+        overflow-x: hidden;
+    }
+
+    /* Hero section */
+    .hero-section {
+        width: 100vw;
+        height: 100vh;
+        position: relative;
+    }
+
+    .hero-content {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    /* Navigation */
+    .navbar {
+        width: 100%;
+    }
+
+    /* Events section */
+    .events-container {
+        padding: 0 10px;
+    }
+
+    .event-card {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Gallery section */
+    .gallery-item {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Contact section */
+    .contact-section {
+        padding: 20px 0;
+    }
+
+    .contact-wrapper {
+        padding: 0 10px;
+    }
+
+    .form-container,
+    .info-container {
+        width: 100%;
+    }
+}
+
+/* Extra Small Devices */
+@media screen and (max-width: 576px) {
+    .container {
+        width: 100vw;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    section {
+        width: 100vw;
+        margin: 0;
+        padding: 20px 0;
+    }
+
+    .hero-content h1 {
+        font-size: 1.75rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .events-filter {
+        flex-direction: column;
+    }
+
+    .filter-btn {
+        width: 100%;
+        margin: 5px 0;
+    }
+}
+
+/* Fix for any horizontal scrolling */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Fix for Bootstrap container */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 100%;
+    }
+}
+
+/* Image responsiveness */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Video responsiveness */
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Fix for slider dots */
+.slider-controls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 20px;
+    z-index: 3;
+}
+
+.slider-dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.slider-dot.active {
+    background: #fff;
+}
