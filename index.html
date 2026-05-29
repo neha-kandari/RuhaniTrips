@@ -87,6 +87,12 @@
                     <source src="v4.mp4" type="video/mp4">
                 </video>
             </div>
+            
+            <div class="video-slide">
+                <video autoplay muted loop playsinline>
+                    <source src="v1.mp4" type="video/mp4">
+                </video>
+            </div>
         </div>
 
         <div class="hero-content">
@@ -114,8 +120,8 @@
         
         <!-- Filter Buttons -->
         <div class="filter-container text-center mt-4 mb-5">
-            <button class="filter-btn active" data-filter="all">All Events</button>
-            <button class="filter-btn" data-filter="special">Special Events</button>
+            <button class="filter-btn active" data-filter="national">National</button>
+            <button class="filter-btn" data-filter="international">International</button>
         </div>
         
         <div class="info-item text-center mb-4">
@@ -126,10 +132,9 @@
         <!-- Events Grid -->
         <div class="events-grid">
             <!-- Event Card 1 -->
-            <div class="event-card" data-category="special">
+            <div class="event-card" data-category="national">
                 <div class="event-image">
                     <img src="assets/img/Char Dham Yatra.jpg" alt="CharDhamYatra">
-                    <span class="event-badge">Special</span>
                 </div>
                 <div class="event-details">
                     <h3 class="event-title">UK Char Dham Yatra</h3>
@@ -154,39 +159,13 @@
             </div>
 
 
-            <!-- Event Card 2 -->
-            <div class="event-card" data-category="regular">
-                <div class="event-image">
-                    <img src="assets/img/kasol.jpg" alt="Desert Safari">
-                </div>
-                <div class="event-details">
-                    <h3 class="event-title">Every Friday</h3>
-                    <div class="event-info">
-                        <div class="info-item">
-                            <i class="fas fa-calendar"></i>
-                            <span>4 Days, 3 Nights</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Destinations: Manali, Kasol,Solang, Khirganga</span>
-                        </div>
-                        <div class="info-item">
-                            <i class="fas fa-tags"></i>
-                            <span>₹6,999</span>
-                        </div>
-                    </div>
-                    <div class="event-footer">
-                        <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
-                    </div>
-                </div>
-            </div>
+
 
         
 <!-- Event Card 3 -->
-<div class="event-card" data-category="special">
+<div class="event-card" data-category="national">
     <div class="event-image">
         <img src="assets/img/Manali.jpg" alt="Manali Trek">
-        <span class="event-badge"> Holi Special</span>
     </div>
     <div class="event-details">
         <h3 class="event-title">Manali Kasol Tosh Trek</h3>
@@ -215,7 +194,7 @@
 </div>
 
 <!-- event 4 card -->
-<div class="event-card" data-category="regular">
+<div class="event-card" data-category="national">
     <div class="event-image">
         <img src="assets/img/Manali-Shimla.jpg" alt="Desert Safari">
     </div>
@@ -241,7 +220,7 @@
     </div>
 </div>
  <!-- event card 5 -->
-<div class="event-card" data-category="regular">
+<div class="event-card" data-category="national">
     <div class="event-image">
         <img src="assets/img/Srinagar.jpg" alt="Desert Safari">
     </div>
@@ -266,10 +245,9 @@
 
 
 <!-- Honeymoon Special Card -->
-<div class="event-card" data-category="special">
+<div class="event-card" data-category="national">
     <div class="event-image">
         <img src="assets/img/couple.jpg" alt="Honeymoon Special">
-        <span class="event-badge">Honeymoon Special</span>
     </div>
     <div class="event-details">
         <h3 class="event-title">Shimla Manali Honeymoon Package</h3>
@@ -289,6 +267,144 @@
             <div class="info-item">
                 <i class="fas fa-tags"></i>
                 <span>₹32,000 per couple</span>
+            </div>
+        </div>
+        <div class="event-footer">
+            <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<!-- International Card 1: Dubai -->
+<div class="event-card" data-category="international">
+    <div class="event-image">
+        <img src="assets/img/dubai.png" alt="Dubai Safari">
+    </div>
+    <div class="event-details">
+        <h3 class="event-title">Dubai</h3>
+        <div class="event-info">
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>5 Nights, 6 Days</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Destinations: Dubai</span>
+            </div>
+        </div>
+        <div class="event-footer">
+            <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<!-- International Card 2: Malaysia -->
+<div class="event-card" data-category="international">
+    <div class="event-image">
+        <img src="assets/img/malaysia.png" alt="Malaysia">
+    </div>
+    <div class="event-details">
+        <h3 class="event-title">Malaysia</h3>
+        <div class="event-info">
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>6 Nights, 7 Days</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Destinations: Malaysia</span>
+            </div>
+        </div>
+        <div class="event-footer">
+            <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<!-- International Card 3: Vietnam -->
+<div class="event-card" data-category="international">
+    <div class="event-image">
+        <img src="assets/img/vietnam.png" alt="Vietnam">
+    </div>
+    <div class="event-details">
+        <h3 class="event-title">Vietnam</h3>
+        <div class="event-info">
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>5 Nights, 6 Days</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Destinations: Vietnam</span>
+            </div>
+        </div>
+        <div class="event-footer">
+            <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<!-- International Card 4: Japan -->
+<div class="event-card" data-category="international">
+    <div class="event-image">
+        <img src="assets/img/japan.png" alt="Japan">
+    </div>
+    <div class="event-details">
+        <h3 class="event-title">Japan</h3>
+        <div class="event-info">
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>5 Nights, 6 Days</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Destinations: Japan</span>
+            </div>
+        </div>
+        <div class="event-footer">
+            <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<!-- International Card 5: Thailand -->
+<div class="event-card" data-category="international">
+    <div class="event-image">
+        <img src="assets/img/thailand.png" alt="Thailand">
+    </div>
+    <div class="event-details">
+        <h3 class="event-title">Thailand</h3>
+        <div class="event-info">
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>3 Nights, 4 Days</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Destinations: Thailand</span>
+            </div>
+        </div>
+        <div class="event-footer">
+            <a href="https://wa.me/919996650521" class="book-btn" target="_blank">Contact Us</a>
+        </div>
+    </div>
+</div>
+
+<!-- International Card 6: Sri Lanka -->
+<div class="event-card" data-category="international">
+    <div class="event-image">
+        <img src="assets/img/srilanka.png" alt="Sri Lanka">
+    </div>
+    <div class="event-details">
+        <h3 class="event-title">Sri Lanka</h3>
+        <div class="event-info">
+            <div class="info-item">
+                <i class="fas fa-calendar"></i>
+                <span>5 Nights, 6 Days</span>
+            </div>
+            <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Destinations: Sri Lanka</span>
             </div>
         </div>
         <div class="event-footer">
@@ -573,45 +689,107 @@
 <section id="feedback" class="feedback-section py-5">
     <div class="container">
         <h2 class="section-title text-center mb-4">Customer Reviews</h2>
-        <p class="section-subtitle text-center mb-5">Share your experience with us</p>
+        <p class="section-subtitle text-center mb-5">See what our travelers have to say about their experiences</p>
 
-        <!-- Feedback Form -->
-        <div class="row justify-content-center mb-5">
-            <div class="col-md-8">
-                <div class="card shadow feedback-card">
-                    <div class="card-body">
-                        <h5 class="card-title mb-4">Write a Review</h5>
-                        <form id="feedbackForm">
-                            <div class="mb-3">
-                                <input type="text" class="form-control" id="reviewerName" placeholder="Your Name" required>
-                            </div>
-                            <div class="mb-3">
-                                <div class="rating">
-                                    <input type="radio" name="rating" value="5" id="star5" required>
-                                    <label for="star5">★</label>
-                                    <input type="radio" name="rating" value="4" id="star4">
-                                    <label for="star4">★</label>
-                                    <input type="radio" name="rating" value="3" id="star3">
-                                    <label for="star3">★</label>
-                                    <input type="radio" name="rating" value="2" id="star2">
-                                    <label for="star2">★</label>
-                                    <input type="radio" name="rating" value="1" id="star1">
-                                    <label for="star1">★</label>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+            <div class="carousel-inner pb-5">
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="review-card text-center p-4">
+                                <div class="rating mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
                                 </div>
+                                <p class="review-text fst-italic mb-4">"The Char Dham Yatra was flawlessly organized. RuhaniTrips took care of every detail, making it a highly spiritual and stress-free journey for our family."</p>
+                                <h5 class="fw-bold mb-1">Ramesh Kumar</h5>
+                                <small class="text-muted">Delhi</small>
                             </div>
-                            <div class="mb-3">
-                                <textarea class="form-control" id="reviewText" rows="4" placeholder="Share your experience..." required></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="review-card text-center p-4">
+                                <div class="rating mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="review-text fst-italic mb-4">"Our family trip to Shimla and Manali was an absolute delight! The driver was experienced, hotels were premium, and the itinerary was perfectly paced."</p>
+                                <h5 class="fw-bold mb-1">Priya Sharma</h5>
+                                <small class="text-muted">Haryana</small>
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit Review</button>
-                        </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="review-card text-center p-4">
+                                <div class="rating mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star-half-alt text-warning"></i>
+                                </div>
+                                <p class="review-text fst-italic mb-4">"We booked our honeymoon package for Dubai through RuhaniTrips. From the Desert Safari to the Burj Khalifa visit, everything exceeded our expectations in terms of luxury and comfort."</p>
+                                <h5 class="fw-bold mb-1">Amit & Neha Singh</h5>
+                                <small class="text-muted">Chandigarh</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slide 4 -->
+                <div class="carousel-item">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 col-lg-6">
+                            <div class="review-card text-center p-4">
+                                <div class="rating mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="review-text fst-italic mb-4">"Best travel agency we've ever used. The Srinagar Jammu Safari was breathtaking, and the whole experience was incredibly authentic and safe."</p>
+                                <h5 class="fw-bold mb-1">Vikram Patil</h5>
+                                <small class="text-muted">Mumbai</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Reviews Display -->
-        <div class="row" id="reviewsContainer">
-            <!-- Reviews will be dynamically inserted here -->
+            <!-- Indicators -->
+            <div class="carousel-indicators" style="bottom: 0;">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active bg-dark"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="bg-dark"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="bg-dark"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" class="bg-dark"></button>
+            </div>
+            
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="filter: invert(1);">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="filter: invert(1);">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
 </section>
@@ -697,7 +875,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="script.js"></script>
-    <script src="feedback.js"></script>
     <script src="contact.js"></script>
   
 </body>

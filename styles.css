@@ -828,6 +828,9 @@ body.dark-theme .filter-btn.active {
     border-radius: 15px;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
 }
 
 /* Theme-specific card styles */
@@ -869,6 +872,9 @@ body.dark-theme .event-card {
 
 .event-details {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 a{
     text-decoration: none;
@@ -902,6 +908,7 @@ a{
     align-items: center;
     padding-top: 15px;
     border-top: 1px solid rgba(128, 128, 128, 0.2);
+    margin-top: auto;
 }
 
 .book-btn {

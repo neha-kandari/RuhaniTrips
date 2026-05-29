@@ -150,10 +150,6 @@ document.addEventListener('DOMContentLoaded', function() {
             duration: '12 Days, 11 Nights',
             pickup: 'Delhi, Haryana, Chandigarh'
         },
-        'Every Friday': {
-            duration: '4 Days, 3 Nights',
-            destinations: 'Manali, Kasol, Khirganga'
-        },
         'Manali Kasol Tosh Trek': {
             duration: '4 Days, 3 Nights',
             destinations: 'Manali, Kasol, Tosh',
@@ -166,6 +162,34 @@ document.addEventListener('DOMContentLoaded', function() {
         'Srinagar Jammu Safari': {
             duration: '7 Days, 6 Nights',
             destinations: 'Srinagar, Gulmarg, Sonmarg, Pahalgaon'
+        },
+        'Shimla Manali Honeymoon Package': {
+            duration: '5 Nights, 6 Days',
+            destinations: 'Shimla, Kufri, Manali'
+        },
+        'Dubai': {
+            duration: '5 Nights, 6 Days',
+            destinations: 'Dubai'
+        },
+        'Malaysia': {
+            duration: '6 Nights, 7 Days',
+            destinations: 'Malaysia'
+        },
+        'Vietnam': {
+            duration: '5 Nights, 6 Days',
+            destinations: 'Vietnam'
+        },
+        'Japan': {
+            duration: '5 Nights, 6 Days',
+            destinations: 'Japan'
+        },
+        'Thailand': {
+            duration: '3 Nights, 4 Days',
+            destinations: 'Thailand'
+        },
+        'Sri Lanka': {
+            duration: '5 Nights, 6 Days',
+            destinations: 'Sri Lanka'
         }
     };
 
