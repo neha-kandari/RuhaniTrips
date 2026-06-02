@@ -346,46 +346,23 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // gallery
-// Gallery filtering functionality
+// Gallery image preloading and carousel initialization
 document.addEventListener('DOMContentLoaded', function() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
-    const galleryItems = document.querySelectorAll('.gallery-item');
-
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            // Add active class to clicked button
-            button.classList.add('active');
-            
-            const filterValue = button.getAttribute('data-filter');
-            
-            galleryItems.forEach(item => {
-                if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
-                    item.style.display = 'block';
-                    setTimeout(() => {
-                        item.style.opacity = '1';
-                        item.style.transform = 'scale(1)';
-                    }, 0);
-                } else {
-                    item.style.opacity = '0';
-                    item.style.transform = 'scale(0.8)';
-                    setTimeout(() => {
-                        item.style.display = 'none';
-                    }, 300);
-                }
-            });
-        });
+    // Force-preload all gallery images by creating Image objects
+    const galleryImages = document.querySelectorAll('#galleryCarousel .gallery-item img');
+    galleryImages.forEach(img => {
+        const preload = new Image();
+        preload.src = img.src;
     });
 
-    // Add click handler for gallery items
-    galleryItems.forEach(item => {
-        item.addEventListener('click', () => {
-            // Here you can add functionality to show a larger view of the image
-            // or navigate to a detailed view page
-            console.log('Gallery item clicked:', item.querySelector('h3').textContent);
+    // Initialize the gallery carousel explicitly
+    const galleryCarouselEl = document.getElementById('galleryCarousel');
+    if (galleryCarouselEl) {
+        new bootstrap.Carousel(galleryCarouselEl, {
+            interval: 5000,
+            ride: 'carousel'
         });
-    });
+    }
 });
 
 document.addEventListener('DOMContentLoaded', function() {
