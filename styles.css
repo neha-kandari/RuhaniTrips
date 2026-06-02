@@ -141,22 +141,6 @@
         letter-spacing: 0.1rem;
     }
 }
-/* Logo Theme Switching */
-.navbar .light-logo {
-    display: none;
-}
-
-.navbar .dark-logo {
-    display: block;
-}
-
-.navbar.light-theme .light-logo {
-    display: block;
-}
-
-.navbar.light-theme .dark-logo {
-    display: none;
-}
 /* Contact Button Styles */
 .btn-contact {
     font-family: 'Montserrat', sans-serif;

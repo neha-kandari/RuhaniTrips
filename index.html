@@ -14,14 +14,21 @@
     <link rel="stylesheet" href="event.css">
     
     <!-- <link rel="stylesheet" href="responsive.css"> -->
+
+    <!-- Preload gallery images so they load immediately regardless of carousel slide state -->
+    <link rel="preload" as="image" href="assets/gallery/Im1.jpg">
+    <link rel="preload" as="image" href="assets/gallery/Im2.jpg">
+    <link rel="preload" as="image" href="assets/gallery/Im3.jpg">
+    <link rel="preload" as="image" href="assets/gallery/Im4.jpg">
+    <link rel="preload" as="image" href="assets/gallery/Im5.jpg">
+    <link rel="preload" as="image" href="assets/gallery/Im6.jpg">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top dark-theme">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="#home">
-                <img src="assets/img/logo2.png" alt="Mountain Logo" width="40" class="me-2 light-logo">
-                <img src="assets/img/logo2.png" alt="Mountain Logo" width="40" class="me-2 dark-logo" style="filter: brightness(0) invert(1);">
+                <img src="assets/img/logo2.png" alt="Mountain Logo" width="40" class="me-2">
                 <span class="logo">Ruhani<span class="text-warning">Trips</span></span>
             </a>
             
@@ -491,21 +498,21 @@
                     <div class="carousel-item active">
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="assets/gallery/Im1.jpg" alt="Gallery Image 1">
+                                <img src="assets/gallery/Im1.jpg" alt="Gallery Image 1" loading="eager">
                                 <!-- <div class="gallery-overlay">
                                     <h3>Char Dham Yatra</h3>
                                     <p>Explore the heights</p>
                                 </div> -->
                             </div>
                             <div class="gallery-item">
-                                <img src="assets/gallery/Im2.jpg" alt="Gallery Image 2">
+                                <img src="assets/gallery/Im2.jpg" alt="Gallery Image 2" loading="eager">
                                 <!-- <div class="gallery-overlay">
                                     <h3>Valley Views</h3>
                                     <p>Nature's beauty</p>
                                 </div> -->
                             </div>
                             <div class="gallery-item">
-                                <img src="assets/gallery/Im3.jpg" alt="Gallery Image 3">
+                                <img src="assets/gallery/Im3.jpg" alt="Gallery Image 3" loading="eager">
                                 <!-- <div class="gallery-overlay">
                                     <h3>Scenic Routes</h3>
                                     <p>Journey through beauty</p>
@@ -517,21 +524,21 @@
                     <div class="carousel-item">
                         <div class="gallery-grid">
                             <div class="gallery-item">
-                                <img src="assets/gallery/Im4.jpg" alt="Gallery Image 4">
+                                <img src="assets/gallery/Im4.jpg" alt="Gallery Image 4" loading="eager">
                                 <!-- <div class="gallery-overlay">
                                     <h3>Cultural Heritage</h3>
                                     <p>Traditional experiences</p>
                                 </div> -->
                             </div>
                             <div class="gallery-item">
-                                <img src="assets/gallery/Im5.jpg" alt="Gallery Image 5">
+                                <img src="assets/gallery/Im5.jpg" alt="Gallery Image 5" loading="eager">
                                 <!-- <div class="gallery-overlay">
                                     <h3>Adventure Trails</h3>
                                     <p>Exciting journeys</p>
                                 </div> -->
                             </div>
                             <div class="gallery-item">
-                                <img src="assets/gallery/Im6.jpg" alt="Gallery Image 6">
+                                <img src="assets/gallery/Im6.jpg" alt="Gallery Image 6" loading="eager">
                                 <!-- <div class="gallery-overlay">
                                     <h3>Local Life</h3>
                                     <p>Authentic experiences</p>

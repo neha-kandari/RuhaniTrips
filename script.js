@@ -218,6 +218,19 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Apply the default active filter on page load (National is active by default)
+    const defaultActiveBtn = document.querySelector('.filter-btn.active');
+    if (defaultActiveBtn) {
+        const defaultFilter = defaultActiveBtn.getAttribute('data-filter');
+        eventCards.forEach(card => {
+            if (defaultFilter === 'all' || card.getAttribute('data-category') === defaultFilter) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    }
+
     // WhatsApp Integration for Contact Buttons
     document.querySelectorAll('.book-btn').forEach(button => {
         button.addEventListener('click', function(e) {
