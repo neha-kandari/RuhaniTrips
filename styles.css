@@ -1999,6 +1999,11 @@ body.dark-theme .section-subtitle {
     background: #fc036b;
 }
 
+.text-start .footer-title::after {
+    left: 0;
+    transform: none;
+}
+
 /* Footer Text */
 .footer-text {
     color: #b0b0b0;
@@ -2038,7 +2043,7 @@ body.dark-theme .section-subtitle {
 .footer-contact li {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 20px;
     color: #b0b0b0;
 }
@@ -2229,7 +2234,7 @@ body.dark-theme .section-subtitle {
     .footer-contact li {
         display: flex;
         align-items: flex-start;
-        justify-content: center;
+        justify-content: flex-start;
         margin-bottom: 20px;
     }
 
