@@ -1991,7 +1991,8 @@ body.dark-theme .section-subtitle {
 .footer-title::after {
     content: '';
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: 0;
     width: 50px;
     height: 2px;
@@ -2021,19 +2022,10 @@ body.dark-theme .section-subtitle {
     text-decoration: none;
     transition: all 0.3s ease;
     position: relative;
-    padding-left: 15px;
-}
-
-.footer-links a::before {
-    content: '→';
-    position: absolute;
-    left: 0;
-    transition: all 0.3s ease;
 }
 
 .footer-links a:hover {
     color: #fc036b;
-    padding-left: 20px;
 }
 
 /* Contact Info */
@@ -2046,6 +2038,7 @@ body.dark-theme .section-subtitle {
 .footer-contact li {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     margin-bottom: 20px;
     color: #b0b0b0;
 }
@@ -2236,6 +2229,7 @@ body.dark-theme .section-subtitle {
     .footer-contact li {
         display: flex;
         align-items: flex-start;
+        justify-content: center;
         margin-bottom: 20px;
     }
 
