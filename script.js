@@ -2,6 +2,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const sliderControls = document.querySelector('.slider-controls');
     const slides = document.querySelectorAll('.video-slide');
+    if (!sliderControls || slides.length === 0) return;
+    
     let currentSlide = 0;
     let slideInterval;
 
